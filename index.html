@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上课点名摇号机</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>上课点名摇号机</h1>
+        <div id="ball">?</div>
+        <div class="buttons">
+            <button onclick="openRangeDialog()">自定义区间</button>
+            <button onclick="startLottery()">开始摇号</button>
+        </div>
+    </div>
+
+    <div id="rangeDialog" class="dialog">
+        <div class="dialog-content">
+            <h2>设置摇号区间</h2>
+            <label>最小值: <input type="number" id="minValue" value="1"></label><br>
+            <label>最大值: <input type="number" id="maxValue" value="30"></label><br>
+            <button onclick="confirmRange()">确认设置</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
